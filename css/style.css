@@ -1,0 +1,50 @@
+:root{
+    --soft-red:hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+*{
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    background-color: var(--cream);
+    color: var(--medium-brown);
+}
+header{
+    background-color: var(--Soft-red);
+}
+main{
+    background-color: white;
+}
+#brown-circule{
+    background-color: var(--dark-brown);
+}
+h1 h2{
+    color: var(--dark-brown);
+}
+.bg-dark-brown{
+    background-color: var(--dark-brown);
+}
+.bg-soft-red{
+    background-color: var(--soft-red);
+}
+.bg-cyan{
+    background-color: var(--cyan);
+}
+.bg-medium-brown{
+    background-color: var(--medium-brown);
+}
+.bg-cream{
+    background-color: var(--cream);
+}
+.bg-very-pale-orange{
+    background-color: var(--very-pale-orange);
+}
+.text-dark-brown{
+    color: var(--dark-brown);
+}
