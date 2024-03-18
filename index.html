@@ -8,13 +8,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Expenses chart component</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="w-[90%] m-auto mt-8">
+<body class="m-auto mt-8 w-[375px] md:w-[500px]">
   <header class="flex justify-between items-center p-5 rounded-lg bg-soft-red">
     <div class="text-white">
       <p>My balance</p>
@@ -25,20 +27,52 @@
       <div id="brown-circule" class="w-[50px] h-[50px] bg-black rounded-full"></div>
     </div>
   </header>
-<main class="p-5 mt-5 rounded-lg">
+<main class="p-6 mt-5 rounded-md w-[100%]">
 
-<h1 class="text-xl text-dark-brown font-bold">Spending - Last 7 days</h1>
-<ul class="flex justify-around items-end h-[250px] mb-5">
-  <li>
-    <div class="bg-cyan h-[70px]"></div>
+<h1 class="text-2xl text-dark-brown font-extrabold">Spending - Last 7 days</h1>
+<ul class="flex justify-around items-end h-[250px] w-[100%] mb-5 mt-5">
+  <li class="flex flex-col group items-center bg-center h-[100%] w-[10%]">
+    <p class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-2 rounded-md font-semibold  mt-auto bg-dark-brown text-white mb-3 z-10" id="mon-amount">$17.45</p>
+    <div class="bg-soft-red w-[100%] rounded-md hover:opacity-80" id="mon-bar">
+    </div>
     mon
   </li>
-  <li class="">tue</li>
-  <li class="">wed</li>
-  <li class="">thu</li>
-  <li class="">fri</li>
-  <li class="">sat</li>
-  <li class="">sun</li>
+  <li  class="flex flex-col group items-center bg-center h-[100%] w-[10%]">
+    <p class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-2 rounded-md font-semibold  mt-auto bg-dark-brown text-white mb-3 z-10" id="tue-amount">$34.91</p>
+    <div class="bg-soft-red w-[100%] rounded-md hover:opacity-80" id="tue-bar">
+    </div>
+    tue
+  </li>
+  <li  class="group flex flex-col group items-center bg-center h-[100%] w-[10%]">
+    <p class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-2 rounded-md font-semibold mt-auto bg-dark-brown text-white mb-3" id="wed-amount">$52.36</p>
+    <div class="bg-soft-red w-[100%] rounded-md hover:opacity-80" id="wed-bar">
+    </div>
+    wed
+  </li>
+  <li c class="flex flex-col group group items-center bg-center h-[100%] w-[10%]">
+    <p class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-2 rounded-md font-semibold  mt-auto bg-dark-brown text-white mb-3 z-10" id="thu-amount">$31.07</p>
+    <div class="bg-soft-red w-[100%] rounded-md hover:opacity-80" id="thu-bar">
+    </div>
+    thu
+  </li>
+  <li  class="flex flex-col  group items-center bg-center h-[100%] w-[10%]">
+    <p class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-2 rounded-md font-semibold  mt-auto bg-dark-brown text-white mb-3 z-10 " id="fri-amount">$23.39</p>
+    <div class="bg-soft-red w-[100%] rounded-md hover:opacity-80" id="fri-bar">
+    </div>
+    fri
+  </li>
+  <li  class="flex flex-col group items-center bg-center h-[100%] w-[10%]">
+    <p class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-2 rounded-md font-semibold  mt-auto bg-dark-brown text-white  mb-3" id="sat-amount">$43.28</p>
+    <div class="bg-soft-red w-[100%] rounded-md hover:opacity-80" id="sat-bar">
+    </div>
+    sat
+  </li>
+  <li  class="flex flex-col group items-center bg-center h-[100%] w-[10%]">
+    <p class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-2 rounded-md font-semibold  mt-auto bg-dark-brown text-white mb-3 z-10" id="sun-amount">$25.48</p>
+    <div class="bg-soft-red  w-[100%] rounded-md hover:opacity-80" id="sun-bar">
+    </div>
+    sun
+  </li>
 </ul>
 
 <hr class="w-[99%] bg-cream h-1 m-auto mt-1 mb-6">
@@ -47,12 +81,12 @@
     <p>Total this month</p>
     <h2 class="text-3xl text-dark-brown font-bold">$478.33</h2>
   </div>
-  <div class="mt-3">
+  <div class="mt-3 flex flex-col items-end">
     <p class="text-dark-brown font-bold">+2.4%</p>
     <p>from last month</p>
   </div>
 </div>
 </main>
-  </div>
+<script src="script.js"></script>
 </body>
 </html>
