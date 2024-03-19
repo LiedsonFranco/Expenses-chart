@@ -29,7 +29,7 @@ getJsonData()
           document.getElementById(data[i].day + '-bar').classList.add('bg-cyan')
         }
         document.getElementById(data[i].day + '-amount').innerText = '$'+data[i].amount 
-        document.getElementById(data[i].day + '-bar').classList.add(`h-[${percent}%]`)
+        document.getElementById(data[i].day + '-bar').classList.add(`h-[${percent*2.5}%]`)
     }
 
 
